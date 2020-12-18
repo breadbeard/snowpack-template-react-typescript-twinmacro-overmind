@@ -2,6 +2,13 @@
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 
+## How To Use this template
+
+```
+$ npx create-snowpack-app snowpack-template-react-typescript-twinmacro-overmind --template https://github.com/breadbeard/snowpack-template-react-typescript-twinmacro-overmind
+
+```
+
 ## Available Scripts
 
 ### npm start

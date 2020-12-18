@@ -1,24 +1,4 @@
 {
-  "name": "snowpack-template-react-typescript-twinmacro-overmind",
-  "description": "A preconfigured template for Snowpack with React, Typescript, Twin.Macro and Overmind",
-  "version": "0.1.0",
-  "license": "MIT",
-  "homepage": "https://github.com/breadbeard/snowpack-template-react-typescript-twinmacro-overmind#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/breadbeard/snowpack-template-react-typescript-twinmacro-overmind.git"
-  },
-  "keywords": [
-    "csa-template"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "babelMacros": {
-    "twin": {
-      "preset": "emotion"
-    }
-  },
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
