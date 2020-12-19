@@ -9,13 +9,20 @@ interface PlayerProps {
 
 export const Player = ({ id }: PlayerProps) => {
   const player = useState().board.players[id];
+  const { endTurn } = useActions();
   const { returnToken } = useActions().players;
 
   console.log('Player render', id);
 
   return (
-    <div css={[tw`m-10`, player.hasTurn && tw`shadow bg-pink-300 rounded-lg`]}>
+    <div
+      css={[tw`m-5 p-5`, player.hasTurn && tw`shadow bg-pink-300 rounded-lg`]}
+    >
       <div>{player.displayName}</div>
+
+      <Button isPrimary onClick={endTurn}>
+        End Turn
+      </Button>
       <div>
         {Colors.map((clr) => (
           <Button isSecondary onClick={() => returnToken(clr)} key={clr}>
