@@ -1,17 +1,18 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 import { createOvermind } from 'overmind';
-import { Provider } from 'overmind-react';
-import { config } from './overmind';
-import App from './App';
+import { Provider as GameProvider } from 'overmind-react';
+import { config } from './state';
+import Splendorf from './Splendorf';
+import type { DorfPlayer } from './state/game';
 
-const overmind = createOvermind(config);
+const game = createOvermind(config);
 
 render(
   <React.StrictMode>
-    <Provider value={overmind}>
-      <App />
-    </Provider>
+    <GameProvider value={game}>
+      <Splendorf />
+    </GameProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
