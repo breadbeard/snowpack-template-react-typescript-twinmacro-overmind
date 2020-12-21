@@ -11,6 +11,7 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.1.2",
     "@emotion/styled": "^11.0.0",
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "overmind": "^26.0.0",
     "overmind-devtools": "^27.0.0",
     "overmind-react": "^27.0.0",
