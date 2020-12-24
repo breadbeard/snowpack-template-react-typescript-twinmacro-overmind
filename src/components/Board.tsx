@@ -12,7 +12,7 @@ const Board = () => {
       <div tw="col-span-6 bg-red-200 bg-opacity-50">Row 2</div>
       <div tw="col-span-6 bg-red-200 bg-opacity-50">Row 1</div>
       <div tw="col-span-6 bg-red-200 bg-opacity-50">Row 0</div>
-      <div tw="row-span-4 bg-red-200 bg-opacity-50 h-full">
+      <div tw="row-span-4 bg-red-200 bg-opacity-50 ">
         <TokensContainer />
       </div>
       <div tw="row-span-4 col-span-2 ">

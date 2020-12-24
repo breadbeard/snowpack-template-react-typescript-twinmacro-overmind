@@ -1,4 +1,4 @@
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
 import { useActions, useState } from '../state';
 import type { ColorType } from '../state/game/color';
 
